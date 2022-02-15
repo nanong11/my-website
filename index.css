@@ -1,28 +1,125 @@
+/* Reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     background-color: #F7F7F7;
-}
-#aln-logo{
-    width: 6rem;
-}
-#aln-logo:hover{
-  padding: .2rem;
 }
 
 /* Navbar and Nav Color */
 .nav-background{
-    background-color: #005082;
+  background-color: #005082;
 }
 .nav-link{
-    color: #FFA41B;
+  color: #FFA41B;
 }
 .nav-link:hover{
-    color: #000839;
+  color: #000839;
 }
+
+/* Side Navbar in md screen up */
+@media(min-width: 992px){
+  .header-style{
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .page-links{
+    height: 100%;
+    margin-left: -20px;
+  }
+  .nav-ul{
+    display: flex;
+    flex-direction: column !important;
+    margin-bottom: auto;
+    margin-top: 100px;
+    gap: 30px;
+    width: 120px;
+  }
+  .modal-dialog{
+    max-width: 100%;
+    margin-left: 110px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+  }
+} 
+
+/* Side Toggle Navbar in md screen down */
+@media (max-width: 991px){
+  .page-links{
+    background-color: #005082;
+    flex-direction: column;
+    width: 0;
+    height: 50000px;
+    position: fixed;
+    top: 50px;
+    left: -80px;
+    bottom: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: ease all;
+    transition-duration: .5s;
+  }
+  .collapse{
+    width: 150px;
+  }
+  .nav-link{
+    margin-left: 80px;
+  }
+  .nav-ul{
+    margin-top: 30px;
+    gap: 25px;
+  }
+  .modal-dialog{
+    margin-top: 65px;
+    max-width: 100%;
+    margin-left: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    
+  }
+}
+
+/* My Logo */
+#aln-logo{
+    width: 6rem;
+    position: fixed;
+    top: 3px;
+    left: 10px;
+    z-index: 2;
+}
+#aln-logo:hover{
+  padding: .2rem;
+}
+main{
+  display: flex;
+  justify-content: center;
+}
+
+
+.modal.fade .modal-dialog {
+  transform: translate3d(0, 100%, 0);
+  overflow: hidden;
+}
+
+.modal.show .modal-dialog {
+  transform: translate3d(0, 0, 0);
+  transition: transform 1s ease-in-out;
+  overflow: hidden;
+}
+
+
+
+
+
 
 
 /* Hambruger - START */
