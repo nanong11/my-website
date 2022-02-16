@@ -43,17 +43,17 @@
                         </a>
                     </li>
                     <li class="nav-item" data-toggle="tooltip" title="About Me" data-placement="right">
-                        <a class="nav-link d-flex flex-column text-center" href="" type="button" class="btn btn-primary" data-toggle="modal" data-target="#about-me">
+                        <a class="nav-link d-flex flex-column text-center" href="" type="button" class="btn" data-toggle="modal" data-target="#about-me">
                             <i class="fas fa-user-tie fa-2x"></i>
                         </a>
                     </li>
                     <li class="nav-item" data-toggle="tooltip" title="Portfolio" data-placement="right">
-                        <a class="nav-link d-flex flex-column text-center" href="">
+                        <a class="nav-link d-flex flex-column text-center" href="" type="button" class="btn" data-toggle="modal" data-target="#portfolio">
                             <i class="fas fa-th-large fa-2x"></i>
                         </a>
                     </li>
                     <li class="nav-item" data-toggle="tooltip" title="Contact" data-placement="right">
-                        <a class="nav-link d-flex flex-column text-center" href="">
+                        <a class="nav-link d-flex flex-column text-center" href="" type="button" class="btn" data-toggle="modal" data-target="#contact">
                             <i class="fas fa-address-card fa-2x"></i>
                         </a>
                     </li>
@@ -65,23 +65,23 @@
                 
     <main>
   
-        <!-- Modal -->
+        <!-- Modal About Me -->
           <div class="modal fade modal-background" id="about-me" tabindex="-1" aria-labelledby="about-me" aria-hidden="true">
-              <div class="modal-dialog ">
+              <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header modal-background">
-                    <h1 class="modal-title mx-auto text-uppercase" id="about-me">ABOUT <span class="me">ME</span></h1>
+                    <h1 class="modal-title mx-auto text-uppercase" id="about-me">About<span class="me">Me</span></h1>
                     <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button> -->
                   </div>
-                  <div class="modal-body bg-light modal-background">
+                  <div class="modal-body modal-background">
                       <!-- About Us -->
                       <section class="container">
                           
                               <!-- About Box -->
                               <div class="row justify-content-center">
-                                  <div class="col-lg-8 text-center">
+                                  <div class="col-lg-8">
                                       <div class="text-center">
                                           <p>I am a full stack web developer. I design and develop services, specializing in creating stylish, modern websites, web services and online stores.</p>
                                       </div>
@@ -89,10 +89,10 @@
                               </div>
                               <div class="">
                                   <div class="row align-items-center justify-content-center mb-5">
-                                      <div class="col-lg-6 text-center">
+                                      <div class="col-lg-6 text-center order-lg-2">
                                             <img class="about-img img-fluid" src="./images/pf.png" title="" alt="">
                                       </div>
-                                      <div class="col-lg-6 mt-5 mt-lg-0">
+                                      <div class="col-lg-6 mt-5 mt-lg-0 order-lg-1">
                                           <div class="about-box">
                                               <h3>I'm Marc <span class="allen">Allen</span> Nanong</h3>
                                               <h6>I'm a full stack web developer and designer based in Philippines</h6>
@@ -139,7 +139,7 @@
                                                           <i class="far fa-bookmark"></i>
                                                       </div>
                                                       <div class="media-body">
-                                                          <h5><a href="#">Portfolio</a></h5>
+                                                          <h5><a href="#" type="button" data-toggle="modal" data-target="#portfolio">Portfolio</a></h5>
                                                           <p>Latest Work</p>
                                                       </div>
                                                   </div>
@@ -152,14 +152,14 @@
                              
                             <!-- Skills -->
                             <div class="row justify-content-center">
-                            <div class="text-center mt-5">
-                                <h2 ><span class="allen">MY</span> SKILLS</h2>
-                            </div>
+                                <div class="text-center mt-5">
+                                    <h2><span class="allen">MY</span>SKILLS</h2>
+                                </div>
                             </div>
                             
                             <div class="row flex-column text-center mt-5">
                                 <h3 class="text-center mb-0">Core Tools</h3>
-                                <div class="col d-flex justify-content-center">
+                                <div class="col d-flex flex-wrap justify-content-center">
                                     <div class="mx-1">
                                         <img class="img-fluid" width="150" src="images/logo-html5.png"/>
                                         <p class="m-0">HTML</p>
@@ -194,14 +194,171 @@
                       <!-- End About Us -->
                   </div>
                   <div class="modal-footer modal-background justify-content-center flex-column">
-                    <button type="button" class="btn btn-download">
-                        <a href="#">My Portfolio</a>
-                    </button>
+                    
                     <button type="button" class="btn btn-download" data-dismiss="modal">Close</button>
-                  </div>
+                </div>
                 </div>
               </div>
           </div>
+           
+            
+
+              <!-- Modal Portfolio-->
+              <div class="modal fade modal-background" id="portfolio" tabindex="-1" aria-labelledby="portfolio" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header modal-background">
+                      <h1 class="modal-title mx-auto text-uppercase" id="portfolio"><span class="me">My</span>Portfolio</h1>
+                      <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button> -->
+                    </div>
+                    <div class="modal-body modal-background">
+                      <!-- Portfolio -->
+                      <section class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="text-center">
+                                        <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-12 col-md">
+                                    <div class="card mx-auto text-light border-0 bg-card p-2 w-100 my-5">
+                                        <img src="./images/portfolio-1.jpg" class="card-img-top img-fluid rounded" alt="...">
+                                        <div class="card-body d-flex flex-column justify-content-center">
+                                          <h5 class="card-title text-center">Card title</h5>
+                                          <p class="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="#" class="btn btn-download mx-auto">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md">
+                                    <div class="card mx-auto text-light border-0 bg-card p-2 w-100 my-5">
+                                        <img src="./images/portfolio-1.jpg" class="card-img-top img-fluid rounded" alt="...">
+                                        <div class="card-body d-flex flex-column justify-content-center">
+                                          <h5 class="card-title text-center">Card title</h5>
+                                          <p class="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="#" class="btn btn-download mx-auto">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md">
+                                    <div class="card mx-auto text-light border-0 bg-card p-2 w-100 my-5">
+                                        <img src="./images/portfolio-1.jpg" class="card-img-top img-fluid rounded" alt="...">
+                                        <div class="card-body d-flex flex-column justify-content-center">
+                                          <h5 class="card-title text-center">Card title</h5>
+                                          <p class="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="#" class="btn btn-download mx-auto">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    </section>
+                    <!-- End Portfolio -->
+                    </div>
+                    <div class="modal-footer modal-background justify-content-center flex-column">
+                        <button type="button" class="btn btn-download" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal Contact-->
+              <div class="modal fade modal-background" id="contact" tabindex="-1" aria-labelledby="contact" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header modal-background">
+                      <h1 class="modal-title mx-auto text-uppercase" id="contact">Contact<span class="me">Me</span></h1>
+                      <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button> -->
+                    </div>
+                    <div class="modal-body modal-background">
+                        <!-- Contact -->
+                        <section class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="text-center">
+                                        <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3>Get In Touch</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                    <div class="media">
+                                        <div class="icon">
+                                            <i class="ti-direction"></i>
+                                        </div>
+                                        <div class="media-body">1042 Aguinaldo St.,<br> Atimonan Quezon,<br> Philippines.</div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="icon">
+                                            <i class="ti-email"></i>
+                                        </div>
+                                        <div class="media-body">marcallen.nanong11@gmail.com<br></div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="icon">
+                                            <i class="ti-mobile"></i>
+                                        </div>
+                                        <div class="media-body">000 0000 0000</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="contact-form">
+                                        <form id="contact-form" method="POST">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Full Name</label>
+                                                        <input name="Name" id="name" placeholder="Name *" class="form-control" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Your Email</label>
+                                                        <input name="Email" id="email" placeholder="Email *" class="form-control" type="email">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label>Subject</label>
+                                                        <input name="Subject" id="subject" placeholder="Subject *" class="form-control" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label>How Can We Help You?</label>
+                                                        <textarea name="message" id="message" placeholder="Your message *" rows="3" class="form-control"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <button class="" type="button" value="Send">Send Meessage</button>
+                                                
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- End Contact -->
+                        
+                    
+                    </div>
+                    <div class="modal-footer modal-background justify-content-center flex-column">
+                        <button type="button" class="btn btn-download" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
     </main>
         
         

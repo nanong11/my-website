@@ -67,6 +67,7 @@ h1 .me{
 .btn-download a{
   text-decoration: none;
   color: #F7F7F7;
+  width: 10rem;
 }
 .media-body a{
   text-decoration: none;
@@ -80,14 +81,15 @@ h1 .me{
 .nav-background{
   background-color: #005082;
 }
-.nav-link{
+.nav-link{  
   color: #FFA41B;
 }
 .nav-link:hover{
   color: #000839;
 }
-.modal-content, .modal-header, .modal-footer{
-  border: 0;
+.modal, .modal-dialog, .modal-content, .modal-header, .modal-title, .modal-body, .modal-footer{
+  border: 0 !important;
+  border-color: #005082;
 }
 .modal-background{
   background-color: #005082 !important;
@@ -96,6 +98,12 @@ h1 .me{
   color: #FFA41B;
 }
 
+.card-title{
+  color: #FFA41B;
+}
+.bg-card{
+  background-color: #005082
+}
 /* Side Navbar in md screen up */
 @media(min-width: 992px){
   .header-style{
@@ -167,7 +175,7 @@ h1 .me{
 #aln-logo{
     width: 6rem;
     position: fixed;
-    top: 3px;
+    top: 5px;
     left: 10px;
     z-index: 2;
 }
