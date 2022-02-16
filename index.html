@@ -47,11 +47,6 @@
                             <i class="fas fa-user-tie fa-2x"></i>
                         </a>
                     </li>
-                    <li class="nav-item" data-toggle="tooltip" title="Skills" data-placement="right">
-                        <a class="nav-link d-flex flex-column text-center" href="">
-                            <i class="fas fa-cogs fa-2x"></i>
-                        </a>
-                    </li>
                     <li class="nav-item" data-toggle="tooltip" title="Portfolio" data-placement="right">
                         <a class="nav-link d-flex flex-column text-center" href="">
                             <i class="fas fa-th-large fa-2x"></i>
@@ -69,255 +64,144 @@
     </header>
                 
     <main>
-        
   
-  <!-- Modal -->
-  
-    <div class="modal fade" id="about-me" tabindex="-1" aria-labelledby="about-me" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title ml-auto " id="about-me">ABOUT ME</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body bg-light">
-                <!-- About Us -->
-                <section class="page_2">
-                    <div class="container">
-                        <!-- About Box -->
-                        <div class="row justify-content-center m-40px-b md-m-30px-b">
-                            <div class="col-lg-8 text-center">
-                                <div class="text-center section-title">
-                                    <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.</p>
-                                </div>
+        <!-- Modal -->
+          <div class="modal fade modal-background" id="about-me" tabindex="-1" aria-labelledby="about-me" aria-hidden="true">
+              <div class="modal-dialog ">
+                <div class="modal-content">
+                  <div class="modal-header modal-background">
+                    <h1 class="modal-title mx-auto text-uppercase" id="about-me">ABOUT <span class="me">ME</span></h1>
+                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button> -->
+                  </div>
+                  <div class="modal-body bg-light modal-background">
+                      <!-- About Us -->
+                      <section class="container">
+                          
+                              <!-- About Box -->
+                              <div class="row justify-content-center">
+                                  <div class="col-lg-8 text-center">
+                                      <div class="text-center">
+                                          <p>I am a full stack web developer. I design and develop services, specializing in creating stylish, modern websites, web services and online stores.</p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="">
+                                  <div class="row align-items-center justify-content-center mb-5">
+                                      <div class="col-lg-6 text-center">
+                                            <img class="about-img img-fluid" src="./images/pf.png" title="" alt="">
+                                      </div>
+                                      <div class="col-lg-6 mt-5 mt-lg-0">
+                                          <div class="about-box">
+                                              <h3>I'm Marc <span class="allen">Allen</span> Nanong</h3>
+                                              <h6>I'm a full stack web developer and designer based in Philippines</h6>
+                                              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet diam nonummy.</p>
+                                              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet diam nonummy.</p>
+                                          </div>
+                                          <div class="row">
+                                              <div class="col-sm-6 my-3">
+                                                  <div class="feature-box media">
+                                                      <div class="icon">
+                                                          <i class="fas fa-award"></i>
+                                                      </div>
+                                                      <div class="media-body">
+                                                          <h5>Starter</h5>
+                                                          <p>Experience</p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="col-sm-6 my-3">
+                                                  <div class="feature-box media align-items-center">
+                                                      <div class="icon">
+                                                          <i class="far fa-handshake"></i>
+                                                      </div>
+                                                      <div class="media-body">
+                                                          <h5>0 Projects</h5>
+                                                          <p>Completed</p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="col-sm-6 my-3">
+                                                  <div class="feature-box media align-items-center">
+                                                      <div class="icon">
+                                                          <i class="fas fa-code"></i>
+                                                      </div>
+                                                      <div class="media-body">
+                                                          <h5>Work Status</h5>
+                                                          <p>Available</p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="col-sm-6 my-3">
+                                                  <div class="feature-box media align-items-center">
+                                                      <div class="icon">
+                                                          <i class="far fa-bookmark"></i>
+                                                      </div>
+                                                      <div class="media-body">
+                                                          <h5><a href="#">Portfolio</a></h5>
+                                                          <p>Latest Work</p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
                             </div>
-                        </div>
-                        <div class="dark-box m-60px-b md-m-50px-b sm-m-40px-b p-15px-tb p-30px-lr sm-p-10px-tb sm-p-20px-lr">
-                            <div class="row align-items-center justify-content-between">
-                                <div class="col-md-5 col-lg-6 m-15px-tb">
-                                    <div class="about-img">
-                                        <img src="static/img/profile.jpg" title="" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-7 col-lg-6 m-15px-tb">
-                                    <div class="about-box">
-                                        <h5>I'm Marc Allen Nanong</h5>
-                                        <h6>I'm a freelancer designer based in Philippines</h6>
-                                        <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet diam nonummy.</p>
-                                    </div>
-                                    <div class="row p-5px-t">
-                                        <div class="col-sm-6 m-10px-tb">
-                                            <div class="feature-box media align-items-center">
-                                                <div class="icon">
-                                                    <i class="fas fa-award"></i>
-                                                </div>
-                                                <div class="media-body">
-                                                    <h5>Starter</h5>
-                                                    <p>Experience</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6 m-10px-tb">
-                                            <div class="feature-box media align-items-center">
-                                                <div class="icon">
-                                                    <i class="far fa-handshake"></i>
-                                                </div>
-                                                <div class="media-body">
-                                                    <h5>0 Projects</h5>
-                                                    <p>Completed</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6 m-10px-tb">
-                                            <div class="feature-box media align-items-center">
-                                                <div class="icon">
-                                                    <i class="fas fa-code"></i>
-                                                </div>
-                                                <div class="media-body">
-                                                    <h5>Freelance</h5>
-                                                    <p>Available</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6 m-10px-tb">
-                                            <div class="feature-box media align-items-center">
-                                                <div class="icon">
-                                                    <i class="far fa-bookmark"></i>
-                                                </div>
-                                                <div class="media-body">
-                                                    <h5><a href="#page_4">Portfolio</a></h5>
-                                                    <p>Latest Work</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="p-25px-t">
-                                        <a class="px-btn px-btn-theme" href="#"><i class="fa fa-download"></i> download my cv</a>
-                                    </div>
-                                </div>
+                            <!-- End About Box -->
+                             
+                            <!-- Skills -->
+                            <div class="row justify-content-center">
+                            <div class="text-center mt-5">
+                                <h2 ><span class="allen">MY</span> SKILLS</h2>
                             </div>
-                        </div>
-                        <!-- End About Box -->
-                        <!-- Resume -->
-                        <div class="row justify-content-center m-40px-b md-m-30px-b">
-                            <div class="col-lg-8 text-center">
-                                <div class="section-title small">
-                                    <h2><span>MY</span> RESUME</h2>
-                                </div>
                             </div>
-                        </div>
-                        <div class="dark-box m-60px-b md-m-50px-b sm-m-40px-b p-15px-tb p-30px-lr sm-p-10px-tb sm-p-20px-lr">
-                            <div class="row">
-                                <div class="col-md-6 m-15px-tb">
-                                    <div class="resume-box">
-                                        <h3>Experience</h3>
-                                        <ul>
-                                            <li>
-                                                <span class="year">
-                                                    <i class="fa fa-calendar"></i> 2019 - 2020
-                                                </span>
-                                                <h5>Web Designer <span>Google</span></h5>
-                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet diam nonummy.</p>
-                                            </li>
-                                            <li>
-                                                <span class="year">
-                                                    <i class="fa fa-calendar"></i> 2019 - 2020
-                                                </span>
-                                                <h5>Web Designer <span>Google</span></h5>
-                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet diam nonummy.</p>
-                                            </li>
-                                            <li>
-                                                <span class="year">
-                                                    <i class="fa fa-calendar"></i> 2019 - 2020
-                                                </span>
-                                                <h5>Web Designer <span>Google</span></h5>
-                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet diam nonummy.</p>
-                                            </li>
-                                        </ul>
+                            
+                            <div class="row flex-column text-center mt-5">
+                                <h3 class="text-center mb-0">Core Tools</h3>
+                                <div class="col d-flex justify-content-center">
+                                    <div class="mx-1">
+                                        <img class="img-fluid" width="150" src="images/logo-html5.png"/>
+                                        <p class="m-0">HTML</p>
+                                    </div>
+                                    <div class="mx-1">
+                                        <img class="img-fluid" width="150" src="images/logo-css3.png"/>
+                                        <p class="m-0">CSS</p>
+                                    </div>
+                                    <div class="mx-1">
+                                        <img class="img-fluid" width="150" src="images/logo-javascript.png"/>
+                                        <p class="m-0">JavaScript</p>
                                     </div>
                                 </div>
-                                <div class="col-md-6 m-15px-tb">
-                                    <div class="resume-box">
-                                        <h3>Education</h3>
-                                        <ul>
-                                            <li>
-                                                <span class="year">
-                                                    <i class="fa fa-calendar"></i> 2019 - 2020
-                                                </span>
-                                                <h5>Web Designer <span>Google</span></h5>
-                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet diam nonummy.</p>
-                                            </li>
-                                            <li>
-                                                <span class="year">
-                                                    <i class="fa fa-calendar"></i> 2019 - 2020
-                                                </span>
-                                                <h5>Web Designer <span>Google</span></h5>
-                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet diam nonummy.</p>
-                                            </li>
-                                            <li>
-                                                <span class="year">
-                                                    <i class="fa fa-calendar"></i> 2019 - 2020
-                                                </span>
-                                                <h5>Web Designer <span>Google</span></h5>
-                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet diam nonummy.</p>
-                                            </li>
-                                        </ul>
+                                <h3 class="text-center mt-5 mb-0">Other Tools</h3>
+                                <div class="col d-flex justify-content-center">
+                                    <div>
+                                        <img class="img-fluid" width="100" src="images/logo-mongodb.png"/>
+                                        <img class="img-fluid" width="100" src="images/logo-nodejs.png"/>
+                                        <img class="img-fluid" width="100" src="images/logo-expressjs.png"/>
+                                        <img class="img-fluid" width="100" src="images/logo-react.png"/>
+                                        <img class="img-fluid" width="100" src="images/logo-heroku.png"/>
+                                        <img class="img-fluid" width="100" src="images/logo-git.png"/>
+                                        <img class="img-fluid" width="100" src="images/logo-sublime-text-3.png"/>
+                                        <img class="img-fluid" width="100" src="images/logo-postman.png"/>
+                                        <img class="img-fluid" width="100" src="images/logo-gitlab-ci-cd.png"/>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <!-- End Resume -->
-                        <!-- Skills -->
-                        <div class="row justify-content-center m-40px-b md-m-30px-b">
-                            <div class="col-lg-8 text-center">
-                                <div class="section-title small">
-                                    <h2><span>MY</span> SKILLS</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="dark-box p-15px-tb p-30px-lr sm-p-10px-tb sm-p-20px-lr">
-                            <div class="row">
-                                <div class="col-sm-6 col-lg-4 m-15px-tb">
-                                    <span class="skill-text">html</span>
-                                    <div class="skill-bar">
-                                        <span class="skill-progress" style="width: 10%;"></span>
-                                        <span class="no" style="left: calc(80% - 15px);">10%</span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-lg-4 m-15px-tb">
-                                    <span class="skill-text">javascript</span>
-                                    <div class="skill-bar">
-                                        <span class="skill-progress" style="width: 5%;"></span>
-                                        <span class="no" style="left: calc(60% - 15px);">5%</span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-lg-4 m-15px-tb">
-                                    <span class="skill-text">css</span>
-                                    <div class="skill-bar">
-                                        <span class="skill-progress" style="width: 10%;"></span>
-                                        <span class="no" style="left: calc(90% - 15px);">10%</span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-lg-4 m-15px-tb">
-                                    <span class="skill-text">jquery</span>
-                                    <div class="skill-bar">
-                                        <span class="skill-progress" style="width: 5%;"></span>
-                                        <span class="no" style="left: calc(50% - 15px);">5%</span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-lg-4 m-15px-tb">
-                                    <span class="skill-text">wordpress</span>
-                                    <div class="skill-bar">
-                                        <span class="skill-progress" style="width: 0%;"></span>
-                                        <span class="no" style="left: calc(85% - 15px);">0%</span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-lg-4 m-15px-tb">
-                                    <span class="skill-text">angular js</span>
-                                    <div class="skill-bar">
-                                        <span class="skill-progress" style="width: 0%;"></span>
-                                        <span class="no" style="left: calc(63% - 15px);">0%</span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-lg-4 m-15px-tb">
-                                    <span class="skill-text">illustrator</span>
-                                    <div class="skill-bar">
-                                        <span class="skill-progress" style="width: 10%;"></span>
-                                        <span class="no" style="left: calc(75% - 15px);">10%</span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-lg-4 m-15px-tb">
-                                    <span class="skill-text">after effects</span>
-                                    <div class="skill-bar">
-                                        <span class="skill-progress" style="width: 10%;"></span>
-                                        <span class="no" style="left: calc(85% - 15px);">10%</span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-lg-4 m-15px-tb">
-                                    <span class="skill-text">photoshop</span>
-                                    <div class="skill-bar">
-                                        <span class="skill-progress" style="width: 20%;"></span>
-                                        <span class="no" style="left: calc(95% - 15px);">20%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Skills -->
-                    </div>
-                </section>
-                <!-- End About Us -->
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary"><a class="px-btn px-btn-theme" href="#"><i class="fa fa-download"></i> Download My CV</a></button>
-            </div>
+                              </div>
+                              <!-- End Skills -->
+                          
+                      </section>
+                      <!-- End About Us -->
+                  </div>
+                  <div class="modal-footer modal-background justify-content-center flex-column">
+                    <button type="button" class="btn btn-download">
+                        <a href="#">My Portfolio</a>
+                    </button>
+                    <button type="button" class="btn btn-download" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
           </div>
-        </div>
-    </div>
-  
-  
     </main>
         
         
