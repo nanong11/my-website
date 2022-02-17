@@ -16,6 +16,7 @@ body{
     background-color: #FFA41B;
     height: 100vh;
     backdrop-filter: blur(3px);
+    overflow: hidden;
 }
 h1, h2, h3, h4, h5{
   font-weight: 700;
@@ -134,9 +135,7 @@ padding: .2rem;
 }
 
 /* Footer */
-footer{
-  height: 10vh;
-}
+
 footer a{
   color: #F7F7F7;
 }
@@ -188,12 +187,12 @@ footer a:hover{
   }
   .home-banner p{
     font-size: 1.5rem;
-    
   }
   footer{
-    margin-left: 7rem;
+    position: fixed;
+    left: 150px;
+    right: 50px;
   }
-  
 } 
 
 /* Medium Screen */
@@ -202,7 +201,7 @@ footer a:hover{
     background-color: #005082;
     flex-direction: column;
     width: 0;
-    height: 10000px;
+    height: 200vh;
     position: fixed;
     top: 50px;
     left: -80px;
@@ -210,7 +209,7 @@ footer a:hover{
     z-index: 1;
     overflow-x: hidden;
     transition: ease all;
-    transition-duration: .5s;
+    transition-duration: .35s;
   }
   .collapse{
     width: 150px;
@@ -230,6 +229,12 @@ footer a:hover{
   }
   .home-banner{
     height: 80vh;
+  }
+  footer{
+    position: fixed;
+    left: 60px;
+    right: 20px;
+    bottom: 40px;
   }
 }
 
@@ -267,6 +272,12 @@ footer a:hover{
   .home-banner p{
     width: 75%;
     margin: auto;
+  }
+  footer{
+    position: fixed;
+    left: 40px;
+    right: 20px;
+    bottom: 40px;
   }
 }
 
