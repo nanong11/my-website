@@ -10,12 +10,12 @@
 
 /* Defaul */
 body{
-    background: url("./images/portfolio-bg1.png");
+    background: url("./images/portfolio-bg2.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #FFA41B;
     height: 100vh;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(5px);
     overflow: hidden;
 }
 h1, h2, h3, h4, h5{
