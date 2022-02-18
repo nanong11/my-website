@@ -198,26 +198,21 @@ footer a:hover{
 /* Medium Screen */
 @media (max-width: 991px){
   .page-links{
-    background-color: #005082;
-    flex-direction: column;
-    width: 0;
-    height: 200vh;
     position: fixed;
+    background-color: #005082;
     top: 50px;
-    left: -80px;
     bottom: 0;
+    width: 0;
+    height: 100vh;
+    transition: .35s ease all;
+    overflow: hidden;
     z-index: 1;
-    overflow-x: hidden;
-    transition: ease all;
-    transition-duration: .35s;
   }
   .collapse{
-    width: 150px;
-  }
-  .nav-link{
-    margin-left: 80px;
+    width: 50px;
   }
   .nav-ul{
+    height: 100vh;
     margin-top: 30px;
     gap: 25px;
   }
@@ -254,7 +249,7 @@ footer a:hover{
     top: 40px;
   }
   .collapse{
-    width: 130px;
+    width: 50px;
   }
   .home-banner{
     height: 80vh;
