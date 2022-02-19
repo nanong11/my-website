@@ -21,13 +21,21 @@
 </head>
 <body> 
     <header class="header-style">
-
         <!-- Nav Start -->
         <nav class="navbar navbar-expand-lg nav-background p-0" role="navigation">
 
+            <!-- Light and Dark Toggler -->
+            <div>
+                <i class="fas fa-moon moon"></i>
+                <label class="switch">
+                  <input id="toggler" type="checkbox" onchange="ligthDarkToggler()">
+                  <span class="slider round"></span>
+                </label>
+            </div>
+            
             <!-- My Logo -->
             <a class="navbar-brand" href="index.html" data-toggle="tooltip" title="Profile" data-placement="right">
-                <img id="my-logo" src="./images/all-6.png" alt="aln-logo">
+                <img id="my-logo" src="./images/aln-white.png" alt="aln-logo">
             </a>
             
             <!-- Hamburger Button Start -->
@@ -67,7 +75,6 @@
             </div>
         </nav>
         <!-- Nav End -->
-
     </header>
                 
     <main>
@@ -76,8 +83,13 @@
             <div class="row home-banner align-items-center justify-content-center">
                 <div class="col text-center align-items-center">
                     <h2>Hello! I'm</h2>
-                    <h1>I'm Marc <span id="h1-allen">Allen</span> Nanong</h1>
+                    <h1 class="text-color">I'm Marc <span id="h1-allen">Allen</span> Nanong</h1>
                     <p>I am a full stack web developer and designer.</p>
+                    <!-- Accent color button -->
+                    <div class="accent-buttons-group d-flex justify-content-center mt-5">
+                        <button class="btn accent-button yellow" onclick="yellow()"></button>
+                        <button class="btn accent-button blue" onclick="blue()"></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -88,7 +100,7 @@
                 <div class="modal-content">
                     <!-- Modal Title -->
                     <div class="modal-header modal-background">
-                        <h1 class="modal-title mx-auto text-uppercase" id="about-me">About<span class="h1-strong">Me</span></h1>
+                        <h1 class="modal-title mx-auto text-uppercase" id="about-me">About<span class="strong">Me</span></h1>
                     </div>
                     <!-- Modal Body -->
                     <div class="modal-body modal-background">
@@ -107,8 +119,8 @@
                                 </div>
                                 <div class="col-lg-6 mt-5 mt-lg-0 order-lg-1">
                                     <div class="about-box">
-                                        <h3>I'm Marc <span id="h3-allen">Allen</span> Nanong</h3>
-                                        <h6>I'm an entry-level full stack web developer and designer base in Philippines.</h6>
+                                        <h3>I'm Marc <span class="strong">Allen</span> Nanong</h3>
+                                        <p>I'm an entry-level full stack web developer and designer base in Philippines.</p>
                                         <p>A tech career shifter aspiring to be a great web developer and contribute significantly to our progressing tech industry. Currently taking Zuitt Full-stack web development program.</p>
                                         <p>I will always be fascinated by how applications and websites aid and give ease to our everyday modern lifestyle. To be a part of this global development in technology is my greatest aspiration.</p>
                                     </div>
@@ -156,7 +168,7 @@
                             <!-- Skills Start -->
                             <div class="row justify-content-center">
                                 <div class="text-center mt-5">
-                                    <h2><span class="h2-strong">MY</span>SKILLS</h2>
+                                    <h2><span class="strong">MY</span>SKILLS</h2>
                                 </div>
                             </div>
                             <div class="row flex-column text-center mt-5">
@@ -191,7 +203,7 @@
                                 </div>
                             </div>
                         </section>
-                        <div class="modal-footer modal-background justify-content-center flex-column mt-5">
+                        <div class="text-center modal-background mt-5">
                             <button type="button" class="btn btn-style" data-dismiss="modal">Close</button>
                         </div>
                     </div>
@@ -206,7 +218,7 @@
                 <div class="modal-content">
                     <!-- Modal Title -->
                     <div class="modal-header modal-background">
-                        <h1 class="modal-title mx-auto text-uppercase" id="portfolio"><span class="h1-strong">My</span>Portfolio</h1>
+                        <h1 class="modal-title mx-auto text-uppercase" id="portfolio"><span class="strong">My</span>Portfolio</h1>
                     </div>
                     <!-- Modal Body Start -->
                     <div class="modal-body modal-background">
@@ -222,30 +234,30 @@
                             <!-- Portfolio Cards -->
                             <div class="row">
                                 <div class="col-12 col-md">
-                                    <div class="card mx-auto text-light border-0 bg-card p-2 w-100 my-3 my-md-4 my-lg-5">
+                                    <div class="card mx-auto border-0 bg-card p-2 w-100 my-3 my-md-4 my-lg-5">
                                         <img src="./images/portfolio-1.jpg" class="card-img-top img-fluid rounded" alt="...">
                                         <div class="card-body d-flex flex-column justify-content-center">
-                                            <h5 class="card-title text-center mb-2">Card title</h5>
+                                            <h5 class="card-title text-center mb-2 strong">Card title</h5>
                                             <p class="card-text text-justify mt-0 mb-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                             <a href="#" class="btn btn-style mx-auto">Go somewhere</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md">
-                                    <div class="card mx-auto text-light border-0 bg-card p-2 w-100 my-3 my-md-4 my-lg-5">
+                                    <div class="card mx-auto border-0 bg-card p-2 w-100 my-3 my-md-4 my-lg-5">
                                         <img src="./images/portfolio-1.jpg" class="card-img-top img-fluid rounded" alt="...">
                                         <div class="card-body d-flex flex-column justify-content-center">
-                                            <h5 class="card-title text-center mb-2">Card title</h5>
+                                            <h5 class="card-title text-center mb-2 strong">Card title</h5>
                                             <p class="card-text text-justify mt-0 mb-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                             <a href="#" class="btn btn-style mx-auto">Go somewhere</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md">
-                                    <div class="card mx-auto text-light border-0 bg-card p-2 w-100 my-3 my-md-4 my-lg-5">
+                                    <div class="card mx-auto border-0 bg-card p-2 w-100 my-3 my-md-4 my-lg-5">
                                         <img src="./images/portfolio-1.jpg" class="card-img-top img-fluid rounded" alt="...">
                                         <div class="card-body d-flex flex-column justify-content-center">
-                                            <h5 class="card-title text-center mb-2">Card title</h5>
+                                            <h5 class="card-title text-center mb-2 strong">Card title</h5>
                                             <p class="card-text text-justify mt-0 mb-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                             <a href="#" class="btn btn-style mx-auto">Go somewhere</a>
                                         </div>
@@ -253,7 +265,7 @@
                                 </div>
                             </div>
                         </section>
-                        <div class="modal-footer modal-background justify-content-center flex-column">
+                        <div class="text-center modal-background">
                             <button type="button" class="btn btn-style" data-dismiss="modal">Close</button>
                         </div>
                     </div>
@@ -268,7 +280,7 @@
                 <div class="modal-content modal-background">
                     <!-- Modal Title -->
                     <div class="modal-header modal-background">
-                        <h1 class="modal-title mx-auto text-uppercase" id="contact">Contact<span class="h1-strong">Me</span></h1>
+                        <h1 class="modal-title mx-auto text-uppercase" id="contact">Contact<span class="strong">Me</span></h1>
                     </div>
                     <!-- Modal Body -->
                     <div class="modal-body modal-background">
@@ -289,19 +301,16 @@
                                     <p>Lets make amazing websites. Hire me!</p>
                                     <div>
                                         <div class="row">
-                                            <div class="col-lg-6">
-                                                    <h6 class="h6-strong mb-0">My Address:</h6>
+                                            <div class="col-lg-8">
+                                                    <h6 class="strong mb-0">My Address:</h6>
                                                     <p class="m-0">991 Aguinaldo St. Brgy Zone 2 Pob. Atimonan, Queozn Philippines</p>
-                                                    <h6 class="h6-strong mb-0 mt-2">My Email & No:</h6>
+                                                    <h6 class="strong mb-0 mt-2">My Email & No:</h6>
                                                     <p class="m-0">marcallen.nanong11@gmail.com</p>
                                                     <p class="m-0">+63 966 941 0322</p>
                                             </div>
-                                            <div class="col-lg-6">
+                                            <div class="col-lg-4 p-auto">
                                                 <iframe class="img-fluid border rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123884.80865840492!2d121.81391494758145!3d13.994264326643512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a2a36a1af947d1%3A0xc46bc9d2f3e29c44!2sAtimonan%2C%20Quezon!5e0!3m2!1sen!2sph!4v1645058937516!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                                             </div>
-                                        </div>
-                                        <div>
-                                            
                                         </div>
                                     </div>
                                 </div>
@@ -333,7 +342,7 @@
                                 <!-- Forms End -->
                             </div>
                         </section>
-                        <div class="modal-footer modal-background justify-content-center flex-column mt-5">
+                        <div class="text-center modal-background mt-5">
                             <button type="button" class="btn btn-style" data-dismiss="modal">Close</button>
                         </div>
                     </div>
@@ -342,7 +351,7 @@
             </div>
         </div>
     </main>
-
+    
     <footer>
         <div class="container-fluid">
             <div class="row">
@@ -365,5 +374,7 @@
     <!-- Bootstrap JS Bundle-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <!-- External JS -->
+    <script src="./index.js"></script>
 </body>
 </html>
