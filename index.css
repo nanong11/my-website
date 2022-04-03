@@ -115,6 +115,10 @@ p{
 }
 
 /* Portfolio Styles */
+.card{
+  height: 35rem;
+}
+
 .bg-card{
   background-color: var(--primary)
 }
